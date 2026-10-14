@@ -20,6 +20,11 @@
 
 **👉 [https://refaccionaria-vargas-demo.netlify.app](https://refaccionaria-vargas-demo.netlify.app)**
 
+<p align="center">
+  <img src="docs/venta.gif" alt="Venta en la caja: búsqueda, carrito, cobro y ticket" width="900"><br>
+  <em>Una venta completa en la demo: login, búsqueda por nombre y SKU, cobro en efectivo y ticket</em>
+</p>
+
 Cuentas de prueba (ID de negocio: **`demo`**):
 
 | Rol      | Correo                 | Contraseña         | Qué puede hacer                                       |
