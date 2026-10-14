@@ -20,23 +20,26 @@
 
 **👉 [https://refaccionaria-vargas-demo.netlify.app](https://refaccionaria-vargas-demo.netlify.app)**
 
-| Rol      | ID de negocio | Correo                   | Contraseña           |
-| -------- | ------------- | ------------------------ | -------------------- |
-| Vendedor | `refa-vargas` | empleado1@refavargas.com | `VendedorDemo2026`   |
-| Admin    | `refa-vargas` | admin@refavargas.com     | (solicitar al autor) |
+Cuentas de prueba (ID de negocio: **`demo`**):
 
-> El backend corre en el plan gratuito de Render: si nadie lo ha usado en un rato, la primera carga tarda hasta un minuto mientras el servidor despierta.
+| Rol      | Correo                 | Contraseña         | Qué puede hacer                                       |
+| -------- | ---------------------- | ------------------ | ----------------------------------------------------- |
+| Admin    | admin@refademo.com     | `AdminDemo2026`    | Todo: dashboard, inventario, reportes, personal, caja |
+| Vendedor | empleado1@refademo.com | `VendedorDemo2026` | Caja y consulta del almacén                           |
 
-### Cómo probar la demo (2 minutos)
+> 🔄 La demo se reinicia sola **todas las noches** (3:00 a.m., hora de CDMX), así que puedes vender, editar o borrar lo que quieras.
+>
+> ⏳ El backend corre en el plan gratuito de Render: si nadie lo ha usado en un rato, la primera carga tarda hasta un minuto mientras el servidor despierta.
 
-1. Entra con la cuenta de **Vendedor**. Al escribir `refa-vargas` en "ID de negocio", el login muestra el nombre del negocio.
-2. En **Caja Virtual**, busca una refacción por nombre o SKU (por ejemplo `balatas` o `DIS-BRE-280`) y agrégala al carrito. El subtotal, el IVA y el total se calculan solos.
-3. Pulsa **Cobrar en Efectivo**: la venta se registra, el stock se descuenta y aparece el ticket imprimible.
-4. Revisa **Almacén General**: el stock de lo que vendiste ya bajó. El vendedor solo puede consultar; altas, ediciones y bajas son del admin.
+### Cómo probar la demo (3 minutos)
 
-El dashboard, los reportes con exportación a Excel y el control de personal son solo para el **Admin**: pide la cuenta o revisa las capturas de abajo. El botón **Pagar con MercadoPago** abre un checkout de prueba (sandbox); para completar el pago se necesita una cuenta compradora de prueba de MercadoPago.
+1. Entra como **Admin**. Al escribir `demo` en "ID de negocio", el login muestra el nombre y el logo de ese negocio.
+2. Revisa el **Dashboard**: ventas del día y del mes, crecimiento contra el mes anterior y gráficas por producto, empleado y método de pago.
+3. En **Caja Virtual**, busca una refacción por nombre o SKU (por ejemplo `balatas` o `DIS-BRE-280`), agrégala y pulsa **Cobrar en Efectivo**. Se descuenta el stock y aparece el ticket imprimible.
+4. En **Historial y Reportes** filtra por fecha o vendedor y exporta a Excel. En **Almacén General** verás las alertas de stock bajo.
+5. Cierra sesión y entra como **Vendedor**: solo tiene la caja y la consulta del almacén, y la API rechaza cualquier acción de admin.
 
-Los datos de la demo (33 refacciones, 3 vendedores y unos 90 días de ventas) se regeneran de vez en cuando, así que tus ventas de prueba pueden desaparecer.
+El botón **Pagar con MercadoPago** abre un checkout de prueba (sandbox); para completar el pago se necesita una cuenta compradora de prueba de MercadoPago.
 
 ---
 
